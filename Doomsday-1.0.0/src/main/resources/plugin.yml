@@ -1,0 +1,13 @@
+name: MyFirstPlugin
+version: ${project.version}
+main: me.bigtallahasee.myfirstplugin.MyFirstPlugin
+api-version: 1.17
+authors: [ Bigtallahasee ]
+description: This is a test plugin
+commands:
+  fml:
+    description: Wussies take the easy way out!
+    aliases: [killme, endit, die]
+  doc:
+    description: I need a doctor!
+    aliases: [health, heal, medic]
