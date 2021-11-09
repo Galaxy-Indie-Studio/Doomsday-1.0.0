@@ -1,0 +1,11 @@
+name: Doomsday
+version: ${project.version}
+main: me.bigtallahasee.doomsday.Doomsday
+api-version: 1.17
+authors: [ Bigtallahasee ]
+description: This will give you all of the essentials for a zombie apocalypse server
+commands:
+  dday:
+    description: This allows access to all regular commands
+  ddayadmin:
+    description: This allows access to all admin commands

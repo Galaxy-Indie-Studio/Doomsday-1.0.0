@@ -1,0 +1,123 @@
+# -------------------------------------------------------------
+#                  Doomsday Plugin
+# I hope you all really enjoy this plugin!! If you do please leave a 5 star review
+# If you all need any support at all with this plugin Join our discord
+# https://discord.gg/PSZS7WnuG2 (This link will never expire)
+# -------------------------------------------------------------
+# Plugin Permissions
+#---------------------------------------------------------------
+# dd.default: (This will allow players access to all the default commands)
+# dd.*: (This will allow the player to perform all commands)
+# dd.admin: (This is only used for the ping system, Don't assign to not receive anything)
+# dd.mod: (This is only used for the ping system, Don't assign to not receive anything)
+# dd.helper: (This is only used for the ping system, Don't assign to not receive anything)
+# dd.doc: (This allows players to use /dday doc)
+#-----------------------------------------------
+# Custom Ping Msgs
+#-----------------------------------------------
+Admin-Ping-Msg: 'is in need of assistance!'
+Mod-Ping-Msg: 'is in need of assistance!'
+Helper-Ping-Msg: 'is in need of assistance!'
+
+Admin-To-Player-Auto-Msg: 'An Admin will be with you shortly!'
+Mod-To-Player-Auto-Msg: 'A Mod will be with you shortly!'
+Helper-To-Player-Auto-Msg: 'A Helper will be with you shortly!'
+Staff-To-Player-Auto-Msg: 'A Staff Member will be with you shortly!'
+
+# Player Stats
+#-----------------------
+
+Players-MoneyReward: true
+Players-SetMoneyReward: 100
+Players-RewardMessage: "&6You earned &2$100&6 for killing a player!"
+
+#-----------------------
+# Zombie Stats
+#-----------------------
+
+Zombies-SetHealth: 18
+Zombies-SetStrength: 4
+Zombies-MoneyReward: true
+Zombies-SetMoneyReward: 10
+Zombies-RewardMessage: "&6You earned &2$10&6 for killing a zombie!"
+Zombies-SetName: "&e&lWalker"
+
+#--------------------------------------------------------------------
+# Mob Blacklist (This has all of the mobs to current date(7/8/2021))
+#--------------------------------------------------------------------
+# PassiveMobs
+#-----------------------------------
+Block-Axolotl: true
+Block-Bat: true
+Block-Cat: true
+Block-Chicken: true
+Block-Cod: true
+Block-Cow: true
+Block-Dolphin: true
+Block-Donkey: true
+Block-Fox: true
+Block-Glow-Squid: true
+Block-Horse: true
+Block-Mooshrom: true
+Block-Mule: true
+Block-Ocelot: true
+Block-Parrot: true
+Block-Pig: true
+Block-Pufferfish: true
+Block-Rabbit: true
+Block-Salmon: true
+Block-Sheep: true
+Block-Squid: true
+Block-Strider: true
+Block-Tropical-Fish: true
+Block-Turtle: true
+Block-Villager: true
+Block-Wandering-Trader: true
+
+#-----------------------------------
+# Neutral Mobs
+#-----------------------------------
+Block-Bee: true
+Block-Goat: true
+Block-Iron-Golem: true
+Block-Llama: true
+Block-Panda: true
+Block-Polar-Bear: true
+Block-Trader-Llama: true
+Block-Wolf: true
+#-----------------------------------
+# Hostile Mobs
+#-----------------------------------
+Block-Creeper: true
+Block-Witch: true
+Block-Enderman: true
+Block-Slime: true
+Block-Skeleton: true
+Block-Spider: true
+Block-Cave-Spider: true
+Block-Zombie-Pigman: true
+Block-Piglin: true
+Block-Evoker: true
+Block-Vindicator: true
+Block-Pillager: true
+Block-Ravager: true
+Block-Vex: true
+Block-Endermite: true
+Block-Guardian: true
+Block-Elder-Guardian: true
+Block-Shulker: true
+Block-Husk: true
+Block-Stray: true
+Block-Phantom: true
+Block-Blaze: true
+Block-Ghast: true
+Block-Magma-Cube: true
+Block-Silverfish: true
+Block-Zombie-Villager: true
+Block-Drowned: true
+Block-Wither-Skeleton: true
+Block-Hoglin: true
+Block-Zoglin: true
+Block-Piglin-Brute: true
+Block-Ender-Dragon: true
+Block-Wither: true
