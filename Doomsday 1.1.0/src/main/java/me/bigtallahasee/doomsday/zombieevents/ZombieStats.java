@@ -2,6 +2,7 @@ package me.bigtallahasee.doomsday.zombieevents;
 
 import me.bigtallahasee.doomsday.Doomsday;
 import org.bukkit.ChatColor;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
@@ -18,6 +19,7 @@ public class ZombieStats implements Listener {
         LivingEntity livingEntity = e.getEntity();
         int hp = plugin.getConfig().getInt("Zombies-SetHealth");
         if (livingEntity instanceof Zombie) {
+            ((Zombie) livingEntity).getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(hp);
             ((Zombie) livingEntity).setHealth(hp);
             livingEntity.setCustomName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("Zombies-SetName")));
         }
