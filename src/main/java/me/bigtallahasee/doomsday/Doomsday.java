@@ -1,10 +1,17 @@
 package me.bigtallahasee.doomsday;
 
-import jdk.jpackage.internal.Log;
+import org.bukkit.plugin.RegisteredServiceProvider;
+import org.bukkit.plugin.java.JavaPlugin;
+
 import me.bigtallahasee.doomsday.commands.AdminCommands;
 import me.bigtallahasee.doomsday.commands.RegCommands;
-import me.bigtallahasee.doomsday.events.*;
+import me.bigtallahasee.doomsday.events.DeathMessage;
+import me.bigtallahasee.doomsday.events.LeaveBed;
+import me.bigtallahasee.doomsday.events.PlayerDeathReward;
+import me.bigtallahasee.doomsday.events.PlayerJoin;
+import me.bigtallahasee.doomsday.events.PlayerLeave;
 import me.bigtallahasee.doomsday.mobevents.BlacklistMobs;
+import me.bigtallahasee.doomsday.utils.Logger;
 import me.bigtallahasee.doomsday.utils.Settings;
 import me.bigtallahasee.doomsday.utils.UpdateChecker;
 import me.bigtallahasee.doomsday.zombieevents.DisableZombieExp;
@@ -12,10 +19,6 @@ import me.bigtallahasee.doomsday.zombieevents.ZombieCombustion;
 import me.bigtallahasee.doomsday.zombieevents.ZombieDeathReward;
 import me.bigtallahasee.doomsday.zombieevents.ZombieStats;
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.ChatColor;
-import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.plugin.java.JavaPlugin;
-import me.bigtallahasee.doomsday.utils.Logger;
 
 
 

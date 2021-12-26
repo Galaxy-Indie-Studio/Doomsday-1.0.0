@@ -1,7 +1,10 @@
 package me.bigtallahasee.doomsday.commands;
 
-import me.bigtallahasee.doomsday.Doomsday;
-import net.milkbowl.vault.chat.Chat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -9,7 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
-import java.util.*;
+import me.bigtallahasee.doomsday.Doomsday;
 
 public class RegCommands implements TabExecutor {
     Doomsday plugin = Doomsday.getPlugin(Doomsday.class);

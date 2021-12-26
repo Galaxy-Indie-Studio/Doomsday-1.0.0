@@ -1,6 +1,5 @@
 package me.bigtallahasee.doomsday.zombieevents;
 
-import me.bigtallahasee.doomsday.Doomsday;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Zombie;
@@ -8,6 +7,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityCombustEvent;
 import org.bukkit.plugin.Plugin;
+
+import me.bigtallahasee.doomsday.Doomsday;
 
 public class ZombieCombustion implements Listener {
     Plugin plugin = Doomsday.getPlugin(Doomsday.class);

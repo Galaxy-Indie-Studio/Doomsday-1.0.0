@@ -1,17 +1,17 @@
 package me.bigtallahasee.doomsday.commands;
 
-import me.bigtallahasee.doomsday.Doomsday;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import me.bigtallahasee.doomsday.Doomsday;
 
 public class AdminCommands implements TabExecutor {
     Doomsday plugin = Doomsday.getPlugin(Doomsday.class);

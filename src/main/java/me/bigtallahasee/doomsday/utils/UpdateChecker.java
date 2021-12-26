@@ -1,26 +1,27 @@
 package me.bigtallahasee.doomsday.utils;
 
-import me.bigtallahasee.doomsday.Doomsday;
-import org.bukkit.Bukkit;
-import org.bukkit.util.Consumer;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Scanner;
 
+import org.bukkit.Bukkit;
+import org.bukkit.util.Consumer;
+
+import me.bigtallahasee.doomsday.Doomsday;
+
 public class UpdateChecker {
-    private Doomsday plugin;
     public static int resourceId;
+    private Doomsday plugin;
 
     public UpdateChecker(Doomsday plugin, int resourceId) {
         this.plugin = plugin;
-        this.resourceId = resourceId;
+        UpdateChecker.resourceId = resourceId;
     }
 
     public void getLatestVersion(Consumer<String> consumer) {
         Bukkit.getScheduler().runTaskAsynchronously(this.plugin, () -> {
-            try (InputStream inputStream = new URL("https://api.spigotmc.org/legacy/update.php?resource=" + this.resourceId).openStream(); Scanner scanner = new Scanner(inputStream)) {
+            try (InputStream inputStream = new URL("https://api.spigotmc.org/legacy/update.php?resource=" + UpdateChecker.resourceId).openStream(); Scanner scanner = new Scanner(inputStream)) {
                 if (scanner.hasNext()) {
                     consumer.accept(scanner.next());
                 }

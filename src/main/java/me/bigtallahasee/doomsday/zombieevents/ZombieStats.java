@@ -1,6 +1,5 @@
 package me.bigtallahasee.doomsday.zombieevents;
 
-import me.bigtallahasee.doomsday.Doomsday;
 import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.LivingEntity;
@@ -10,6 +9,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.Plugin;
+
+import me.bigtallahasee.doomsday.Doomsday;
 
 public class ZombieStats implements Listener {
     Plugin plugin = Doomsday.getPlugin(Doomsday.class);
