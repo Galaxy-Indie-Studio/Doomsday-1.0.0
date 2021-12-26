@@ -54,7 +54,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     
 
-    - run: |
+    - run: 
         runs-on: ubuntu-latest
 
         steps:
@@ -63,7 +63,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'adopt'
+          distribution: 'zulu'
+          java-package: jdk
+
         - name: Build with Maven
           run: mvn --batch-mode --update-snapshots verify
 
