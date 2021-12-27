@@ -1,1 +1,6 @@
-"includeForks": true
+{
+  "enabled": true,
+  "includeForks": true,
+  "extends": [
+    "config:base"
+  ],
