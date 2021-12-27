@@ -1,7 +1,1 @@
-{
-  "extends": [
-    "config:base"
-  ]
-
-"includeForks": true
-}
+renovateFork=true
